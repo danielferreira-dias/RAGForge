@@ -1,0 +1,261 @@
+{
+  "dataset_info": {
+    "name": "AWS Overview Ground Truth Dataset",
+    "source_document": "docs/aws-overview.pdf",
+    "creation_date": "2025-10-24",
+    "description": "Ground truth question-answer pairs for evaluating RAG pipelines on AWS documentation",
+    "total_questions": 30
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "question": "What is Amazon Web Services (AWS)?",
+      "answer": "Amazon Web Services (AWS) is a comprehensive cloud computing platform provided by Amazon that offers a wide range of infrastructure services such as computing power, storage options, networking, and databases, delivered as on-demand utilities over the internet.",
+      "category": "definition",
+      "difficulty": "easy",
+      "keywords": ["AWS", "cloud computing", "Amazon"]
+    },
+    {
+      "id": "q002",
+      "question": "What are the main benefits of using AWS cloud services?",
+      "answer": "The main benefits of AWS include: scalability and elasticity, cost-effectiveness with pay-as-you-go pricing, global infrastructure with multiple regions and availability zones, high reliability and security, extensive service portfolio, and reduced time to market for applications.",
+      "category": "conceptual",
+      "difficulty": "easy",
+      "keywords": ["benefits", "advantages", "cloud services"]
+    },
+    {
+      "id": "q003",
+      "question": "What is Amazon EC2?",
+      "answer": "Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the cloud. It allows users to launch virtual servers (instances) on-demand, providing complete control over computing resources and enabling quick scaling up or down based on requirements.",
+      "category": "service_definition",
+      "difficulty": "easy",
+      "keywords": ["EC2", "compute", "virtual servers", "instances"]
+    },
+    {
+      "id": "q004",
+      "question": "What is Amazon S3 and what is it used for?",
+      "answer": "Amazon Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. It is used for storing and retrieving any amount of data, including backups, archives, analytics data, static website hosting, and application data.",
+      "category": "service_definition",
+      "difficulty": "easy",
+      "keywords": ["S3", "storage", "object storage"]
+    },
+    {
+      "id": "q005",
+      "question": "What is AWS Lambda?",
+      "answer": "AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. You pay only for the compute time consumed, and Lambda automatically scales your application by running code in response to triggers such as changes to data, system state, or user actions.",
+      "category": "service_definition",
+      "difficulty": "easy",
+      "keywords": ["Lambda", "serverless", "compute"]
+    },
+    {
+      "id": "q006",
+      "question": "What is Amazon RDS?",
+      "answer": "Amazon Relational Database Service (RDS) is a managed database service that makes it easy to set up, operate, and scale relational databases in the cloud. It supports multiple database engines including MySQL, PostgreSQL, Oracle, SQL Server, and Amazon Aurora, handling routine database tasks like provisioning, patching, backup, and recovery.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["RDS", "database", "relational database", "managed service"]
+    },
+    {
+      "id": "q007",
+      "question": "What is Amazon VPC?",
+      "answer": "Amazon Virtual Private Cloud (VPC) is a service that lets you launch AWS resources in a logically isolated virtual network that you define. You have complete control over your virtual networking environment, including IP address ranges, subnets, route tables, and network gateways.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["VPC", "networking", "virtual network", "isolation"]
+    },
+    {
+      "id": "q008",
+      "question": "What are AWS Availability Zones?",
+      "answer": "Availability Zones (AZs) are physically separate data centers within an AWS Region, each with independent power, cooling, and networking. They are connected through low-latency links and are designed to provide fault isolation and enable high availability by allowing applications to be distributed across multiple zones.",
+      "category": "infrastructure",
+      "difficulty": "medium",
+      "keywords": ["Availability Zones", "AZ", "data centers", "high availability"]
+    },
+    {
+      "id": "q009",
+      "question": "What is Amazon CloudFront?",
+      "answer": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds. It integrates with other AWS services and uses edge locations worldwide to cache content closer to end users.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["CloudFront", "CDN", "content delivery", "edge locations"]
+    },
+    {
+      "id": "q010",
+      "question": "What is AWS IAM?",
+      "answer": "AWS Identity and Access Management (IAM) is a service that enables you to securely control access to AWS resources. It allows you to create and manage AWS users and groups, and use permissions to allow or deny their access to AWS resources through policies.",
+      "category": "service_definition",
+      "difficulty": "easy",
+      "keywords": ["IAM", "identity", "access management", "security", "permissions"]
+    },
+    {
+      "id": "q011",
+      "question": "What is Amazon DynamoDB?",
+      "answer": "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. It supports both document and key-value data models, offers built-in security, backup and restore capabilities, and can handle more than 10 trillion requests per day.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["DynamoDB", "NoSQL", "database", "key-value"]
+    },
+    {
+      "id": "q012",
+      "question": "What is AWS CloudFormation?",
+      "answer": "AWS CloudFormation is an infrastructure as code (IaC) service that allows you to model and provision AWS resources using templates. It enables you to treat infrastructure as code, version control your infrastructure, and automate the provisioning and updating of your entire infrastructure in a safe and predictable manner.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["CloudFormation", "infrastructure as code", "IaC", "templates"]
+    },
+    {
+      "id": "q013",
+      "question": "What is Amazon ECS?",
+      "answer": "Amazon Elastic Container Service (ECS) is a fully managed container orchestration service that makes it easy to deploy, manage, and scale containerized applications. It supports Docker containers and allows you to run applications on a managed cluster of EC2 instances or using AWS Fargate for serverless compute.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["ECS", "containers", "Docker", "orchestration"]
+    },
+    {
+      "id": "q014",
+      "question": "What is the AWS Well-Architected Framework?",
+      "answer": "The AWS Well-Architected Framework is a set of best practices and guidelines for designing and operating reliable, secure, efficient, and cost-effective systems in the cloud. It is built on six pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.",
+      "category": "conceptual",
+      "difficulty": "medium",
+      "keywords": ["Well-Architected Framework", "best practices", "pillars"]
+    },
+    {
+      "id": "q015",
+      "question": "What is Amazon SNS?",
+      "answer": "Amazon Simple Notification Service (SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication. It enables you to send messages to large numbers of subscribers through multiple protocols including SMS, email, HTTP/S endpoints, and mobile push notifications.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["SNS", "messaging", "notifications", "pub-sub"]
+    },
+    {
+      "id": "q016",
+      "question": "What is Amazon SQS?",
+      "answer": "Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. It eliminates the complexity of managing message-oriented middleware and allows you to send, store, and receive messages between software components.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["SQS", "queue", "messaging", "decoupling"]
+    },
+    {
+      "id": "q017",
+      "question": "What is AWS Elastic Beanstalk?",
+      "answer": "AWS Elastic Beanstalk is a Platform as a Service (PaaS) that makes it easy to deploy and scale web applications and services. You simply upload your code, and Elastic Beanstalk automatically handles deployment, capacity provisioning, load balancing, auto-scaling, and application health monitoring, while giving you full control over the underlying resources.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["Elastic Beanstalk", "PaaS", "deployment", "web applications"]
+    },
+    {
+      "id": "q018",
+      "question": "What is Amazon Route 53?",
+      "answer": "Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service. It is designed to route end users to internet applications by translating domain names into IP addresses, and it also provides domain registration, health checking of resources, and various routing policies.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["Route 53", "DNS", "domain", "routing"]
+    },
+    {
+      "id": "q019",
+      "question": "What is AWS CloudWatch?",
+      "answer": "Amazon CloudWatch is a monitoring and observability service that provides data and actionable insights for AWS resources and applications. It collects and tracks metrics, logs, and events, allows you to set alarms, visualize data through dashboards, and automatically react to changes in your AWS environment.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["CloudWatch", "monitoring", "metrics", "logs", "observability"]
+    },
+    {
+      "id": "q020",
+      "question": "What is Amazon EBS?",
+      "answer": "Amazon Elastic Block Store (EBS) provides persistent block storage volumes for use with EC2 instances. EBS volumes are highly available and reliable storage volumes that can be attached to running instances and persist independently from the instance lifecycle, making them suitable for databases, file systems, and applications requiring frequent updates.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["EBS", "block storage", "volumes", "persistent storage"]
+    },
+    {
+      "id": "q021",
+      "question": "What is the difference between Amazon S3 and Amazon EBS?",
+      "answer": "Amazon S3 is an object storage service designed for storing and retrieving any amount of data from anywhere, accessed via HTTP/S APIs. Amazon EBS is block storage that attaches to EC2 instances like a hard drive. S3 is ideal for static content, backups, and archives, while EBS is optimized for low-latency access and database or application data requiring frequent updates.",
+      "category": "comparison",
+      "difficulty": "medium",
+      "keywords": ["S3", "EBS", "storage", "differences"]
+    },
+    {
+      "id": "q022",
+      "question": "What is Amazon Aurora?",
+      "answer": "Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, combining the performance and availability of high-end commercial databases with the simplicity and cost-effectiveness of open-source databases. It offers up to 5 times the throughput of standard MySQL and 3 times that of standard PostgreSQL.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["Aurora", "database", "MySQL", "PostgreSQL", "RDS"]
+    },
+    {
+      "id": "q023",
+      "question": "What is AWS Auto Scaling?",
+      "answer": "AWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. It enables you to set up application scaling for multiple resources across multiple services, using scaling plans that automatically respond to changing demand.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["Auto Scaling", "scaling", "capacity", "elasticity"]
+    },
+    {
+      "id": "q024",
+      "question": "What is Amazon Elastic Load Balancing (ELB)?",
+      "answer": "Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. It offers three types of load balancers: Application Load Balancer (ALB), Network Load Balancer (NLB), and Gateway Load Balancer, each suited for different use cases.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["ELB", "load balancing", "traffic distribution", "ALB", "NLB"]
+    },
+    {
+      "id": "q025",
+      "question": "What is AWS Regions?",
+      "answer": "AWS Regions are separate geographic areas where AWS has data centers. Each Region consists of multiple, isolated Availability Zones. Regions are designed to be completely independent, allowing customers to choose where to store data to meet regulatory requirements, optimize latency, and implement disaster recovery strategies.",
+      "category": "infrastructure",
+      "difficulty": "easy",
+      "keywords": ["Regions", "geographic", "data centers", "location"]
+    },
+    {
+      "id": "q026",
+      "question": "What is Amazon Redshift?",
+      "answer": "Amazon Redshift is a fast, fully managed, petabyte-scale data warehouse service that makes it simple and cost-effective to analyze large amounts of data using SQL and existing business intelligence tools. It uses columnar storage, data compression, and massively parallel processing to deliver fast query performance.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["Redshift", "data warehouse", "analytics", "SQL"]
+    },
+    {
+      "id": "q027",
+      "question": "What is AWS Edge Location?",
+      "answer": "Edge Locations are AWS data centers designed to deliver services with the lowest latency possible. They are used by CloudFront and other services to cache content and reduce latency for end users. Edge Locations are more numerous than Regions and Availability Zones, strategically placed in major cities worldwide.",
+      "category": "infrastructure",
+      "difficulty": "medium",
+      "keywords": ["Edge Location", "CloudFront", "CDN", "latency", "caching"]
+    },
+    {
+      "id": "q028",
+      "question": "What is Amazon Glacier?",
+      "answer": "Amazon S3 Glacier (formerly Amazon Glacier) is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup. It is designed for data that is infrequently accessed and provides three retrieval options ranging from minutes to hours, with storage costs significantly lower than S3 standard storage.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["Glacier", "archiving", "backup", "cold storage", "S3"]
+    },
+    {
+      "id": "q029",
+      "question": "What is the AWS Shared Responsibility Model?",
+      "answer": "The AWS Shared Responsibility Model defines the division of security responsibilities between AWS and the customer. AWS is responsible for security 'of' the cloud (infrastructure, hardware, software, networking, and facilities), while customers are responsible for security 'in' the cloud (customer data, applications, identity and access management, operating system configurations, and network traffic protection).",
+      "category": "conceptual",
+      "difficulty": "medium",
+      "keywords": ["Shared Responsibility Model", "security", "responsibilities"]
+    },
+    {
+      "id": "q030",
+      "question": "What is Amazon ElastiCache?",
+      "answer": "Amazon ElastiCache is a fully managed in-memory caching service that supports Redis and Memcached engines. It improves application performance by retrieving data from fast, managed, in-memory caches instead of slower disk-based databases. It is commonly used for session storage, caching database queries, and real-time analytics.",
+      "category": "service_definition",
+      "difficulty": "medium",
+      "keywords": ["ElastiCache", "caching", "Redis", "Memcached", "in-memory"]
+    }
+  ],
+  "evaluation_metrics": {
+    "suggested_metrics": [
+      "answer_relevance",
+      "answer_correctness",
+      "faithfulness",
+      "context_precision",
+      "context_recall"
+    ],
+    "notes": "This dataset can be used with RAG evaluation frameworks like RAGAS, TruLens, or custom evaluation pipelines"
+  }
+}
